@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+
+{% block title %}DCAI{% endblock title %}
+
+
+{% block body %}
+<div class="text-center my-4" role="group" aria-label="Basic mixed styles example" >
+  <button onclick="window.location.href ='/prepro';" type="button" class="btn btn-danger">Data Preprocessing
+ </button>
+  <button onclick="window.location.href ='/aug';" type="button" class="btn btn-warning">Data Augmentation</button>
+  <button onclick="window.location.href ='/prog';" type="button" class="btn btn-success">Data Augmentation by GAN</button>
+  <button class="btn"> <a href="{% url 'services' %}"> GO BACK</a></button>
+</div>
+
+<h1 class="text-center">NUMERIC DATA (DIABETES DATASET):</h1>
+<h2 class="text-center">DATA AUGMENTATION:</h2>
+<h3 class="text-center">LOGISTIC REGRESSION RESULTS:</h3>
+<div class="container ml-53">
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <div class="col-md-6">
+<div class="card mb-4 shadow-sm">
+<img src="/static/img/7.jpg" class="d-block w-100" alt="...">                       
+</div>
+</div>
+<div class="col-md-6">
+<div class="card mb-4 shadow-sm">
+  <img src="/static/img/8.jpg" class="d-block w-100" alt="...">
+</div>
+</div>                     
+</div>
+</div>
+<h3 class="text-center">DECISION TREE RESULTS:</h3>
+<div class="container ml-53">
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+    <div class="col-md-6">
+<div class="card mb-4 shadow-sm">
+<img src="/static/img/9.jpg" class="d-block w-100" alt="...">                       
+</div>
+</div>
+<div class="col-md-6">
+<div class="card mb-4 shadow-sm">
+<img src="/static/img/10.jpg" class="d-block w-100" alt="...">
+</div>
+</div>                     
+</div></div>
+
+<h3 class="text-center">NEURAL NETWORKS RESULTS:</h3>
+<div class="container ml-53">
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+<div class="col-md-6">
+<div class="card mb-4 shadow-sm">
+<img src="/static/img/11.jpg" class="d-block w-100" alt="...">                       
+</div>
+</div>
+<div class="col-md-6">
+<div class="card mb-4 shadow-sm">
+<img src="/static/img/12.jpg" class="d-block w-100" alt="...">
+</div>
+</div>                     
+</div>
+
+</div>                     
+</div>
+
+{% endblock body %}

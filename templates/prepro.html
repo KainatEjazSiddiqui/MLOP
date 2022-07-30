@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+
+{% block title %}DATA PROPROCESSING{% endblock title %}
+{% block body %}
+<div class="text-center my-4" role="group" aria-label="Basic mixed styles example" >
+  <button onclick="window.location.href ='/prepro';" type="button" class="btn btn-danger">Data Preprocessing on Numeric dataset
+  </button>
+  
+ <button onclick="window.location.href ='/aug';" type="button" class="btn btn-warning">Data Augmentation</button>
+    <button onclick="window.location.href ='/prog';" type="button" class="btn btn-success">Data Augmentation by GAN</button>
+    <button class="btn"> <a href="{% url 'services' %}"> GO BACK</a></button>
+  </div>
+
+<h1 class="text-center">NUMERIC DATA (DIABETES DATASET):</h1>
+<h2 class="text-center">PREPROCESSING:</h2>
+<h3 class="text-center">LOGISTIC REGRESSION RESULTS:</h3>
+<div class="container ml-43">
+                <div class="col-md-8">
+              <div class="card mb-4 shadow-sm">
+            <img src="/static/img/1.jpg" class="d-block w-100" alt="...">                       
+            </div>
+            </div>
+            <div class="col-md-8">
+              <div class="card mb-4 shadow-sm">
+                <img src="/static/img/2.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>                     
+           </div>
+        <h3 class="text-center">DECISION TREE RESULTS:</h3>
+        <div class="container ml-53">
+            <div class="col-md-8">
+          <div class="card mb-4 shadow-sm">
+        <img src="/static/img/3.jpg" class="d-block w-100" alt="...">                       
+        </div>
+        </div>
+        <div class="col-md-8">
+          <div class="card mb-4 shadow-sm">
+            <img src="/static/img/4.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>                     
+       </div>
+    <h3 class="text-center">NEURAL NETWORKS RESULTS:</h3>
+    <div class="container ml-53">
+        <div class="col-md-8">
+      <div class="card mb-4 shadow-sm">
+    <img src="/static/img/5.jpg" class="d-block w-100" alt="...">                       
+    </div>
+    </div>
+    <div class="col-md-8">
+      <div class="card mb-4 shadow-sm">
+        <img src="/static/img/6.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>                     
+   </div>
+
+
+  
+
+{% endblock body %}

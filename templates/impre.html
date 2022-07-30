@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block title %}DCAI{% endblock title %}
+
+
+{% block body %}
+
+<div class="text-center my-4" role="group" aria-label="Basic mixed styles example" >
+  <button onclick="window.location.href ='/prepro';" type="button" class="btn btn-danger">Data Preprocessing on Numeric dataset
+  </button>
+<button onclick="window.location.href ='/impre';" type="button" class="btn btn-success">Data Preprocessing on Image Dataset</button>
+  
+    <button onclick="window.location.href ='/aug';" type="button" class="btn btn-warning">Data Augmentation</button>
+    <button onclick="window.location.href ='/prog';" type="button" class="btn btn-success">Data Augmentation by GAN</button>
+  </div>
+  <h1 class="text-center">IMAGE DATASET(MNIST DATASET): </h1>
+  <h1 class="text-center">PREPROCESSING: </h1>
+  <div class="container ml-53">
+    <div >
+  <div class="card mb-4 shadow-sm">
+<img src="/static/img/13.jpg" class="d-block w-100" alt="...">                       
+</div>
+</div>
+<div class="col-md-8">
+  <div class="card mb-4 shadow-sm">
+    <img src="/static/img/14.jpg" class="d-block w-100" alt="...">
+  </div>
+</div>
+<div class="col-md-8">
+  <div class="card mb-4 shadow-sm">
+    <img src="/static/img/15.jpg" class="d-block w-100" alt="...">
+  </div>
+</div>                          
+</div>
+  {% endblock body %}

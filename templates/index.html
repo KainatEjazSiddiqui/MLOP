@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock title %}
+
+{% block body %}
+<div class="container-fluid px-0">
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+                <img src="https://source.unsplash.com/1200x400/? artificialintelligence" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+            <h5>Welcome to the MLOPs DCAI WEB APP</h5>
+            <p>Machine Learning Performance Improvements Using AI Based Data Centric Approach</p>
+        </div>
+        </div>
+        <div class="carousel-item">
+              <img src="https://source.unsplash.com/1200x400/? Machinelearning" class="d-block w-100" alt="...">
+
+        <div class="carousel-caption d-none d-md-block">
+            <h5></h5>
+            <p></p>
+        </div>
+        </div>
+        <div class="carousel-item">
+        <img src="https://source.unsplash.com/1200x400/? artificialintelligence" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+            <h5></h5>
+            <p></p>
+        </div>
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+    </div>
+</div>
+<div class="container mb-3 py-4">
+  <figure class=" mt-auto">
+      <blockquote class="blockquote">
+       <p> Data-centric AI is a new and exciting research topic in the AI community, but many organizations already build and maintain various "data-centric" applications whose goal is to produce high quality data. These range from traditional business data processing applications (e.g., "how much should we charge each of our customers this month?") to production ML systems such as recommendation engines. The fields of data and ML engineering have arisen in recent years to manage these applications, and both include many interesting novel tools and processes. In this paper, we discuss several lessons from data and ML engineering that could be interesting to apply in data-centric AI, based on our experience building data and ML platforms that serve thousands of applications at a range of organizations.</p>
+      </blockquote>
+      
+    </figure>
+    <div class="container mb-3 py-4">
+      <figure class=" mt-auto">
+          <blockquote class="blockquote">
+           <p> Data preprocessing can refer to manipulation or dropping of data before it is used in order to ensure or enhance performance, and is an important step in the data mining process. The phrase "garbage in, garbage out" is particularly applicable to data mining and machine learning projects</p>
+          </blockquote>
+          
+        </figure>
+        <div class="container mb-3 py-4">
+          <figure class=" mt-auto">
+              <blockquote class="blockquote">
+               <p> Data augmentation in data analysis are techniques used to increase the amount of data by adding slightly modified copies of already existing data or newly created synthetic data from existing data. It acts as a regularizer and helps reduce overfitting when training a machine learning model.</p>
+              </blockquote>
+               </figure>
+            <div class="container mb-3 py-4">
+              <figure class=" mt-auto">
+                  <blockquote class="blockquote">
+                   <p> A generative adversarial network is a class of machine learning frameworks designed by Ian Goodfellow and his colleagues in June 2014. Two neural networks contest with each other in a game. Given a training set, this technique learns to generate new data with the same statistics as the training set.
+                  </p>
+                  </blockquote>
+                  
+                </figure>
+
+{% endblock body %}
