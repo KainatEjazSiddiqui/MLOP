@@ -17,7 +17,7 @@ urlpatterns = [
     path('impre',views.impre,name="impre"),
     path('datasetpre',views.datasetpre,name="datasetpre"),
     path('datasetAfter',views.datasetAfter,name="datasetAfter"),
-    path('augb',views.aug,name="augb"),
-    path('auga',views.aug,name="auga"),
+    path('augb',views.augb,name="augb"),
+    path('auga',views.auga,name="auga"),
     path('search',views.search,name="search"),
 ]
